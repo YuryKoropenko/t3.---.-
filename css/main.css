@@ -9,7 +9,7 @@
 }
 body{
     background: #ffffff;
-    max-width: 1900px;
+    /*max-width: 1900px;*/
 }
 header{
     background: #f8f8f8;
@@ -116,6 +116,7 @@ div.phone{
     padding: 0;
     height:auto;
     margin-bottom: 80px;
+    position: relative;
 }
 .banner img{
     width: 100%;
@@ -211,9 +212,6 @@ div.phone{
     color: grey;
     padding-left: 15px;
 
-}
-input.form_name{
-    margin-right: 30px;
 }
 form >textarea{
     margin-top: 17px;
@@ -536,4 +534,82 @@ input.call_phone {
 }
 input.call_phone::placeholder{
     padding-left: 20px;
+}
+.news_box-slider {
+    position: relative;
+}
+.news_box-slider .item {
+    text-align: left;
+}
+.news_box-slider .btn {
+    float: none;
+}
+.news_box-slider .owl-prev {
+    background-image: url(../img/slider-arrow.png);
+    width: 16px;
+    height: 31px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15.5px;
+    left: -37px;
+    z-index: 20;
+}
+.news_box-slider .owl-next {
+    background-image: url(../img/slider-arrow.png);
+    width: 16px;
+    height: 31px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15.5px;
+    right: -37px;
+    z-index: 20;
+}
+.form__title {
+    position: relative;
+    padding-left: 92px;
+}
+.form__title img {
+    position: absolute;
+    left: 0;
+    top: 26px;
+}
+.form__input {
+    position: relative;
+    right: 0;
+    top: 0;
+    display: block;
+}
+.form .u-info .form__input:first-child {
+    margin-right: 30px;
+}
+.form__input input {
+    border: 1px solid #babbbd;
+    outline: none;
+    padding: 0 56px 0 16px;
+}
+form >textarea {
+    padding: 16px;
+    outline: none;
+    resize: none;
+    border: 1px solid #babbbd;
+}
+.form__input-icon {
+    height: 35px;
+    width: 48px;
+    position: absolute;
+    border-left: 1px solid #d9d9d9;
+    background-repeat: no-repeat;
+    right: 8px;
+    top: 50%;
+    margin-top: -17.5px;
+    z-index: 2;
+    background-position: center center;
 }

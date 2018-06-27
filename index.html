@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="js/OwlCarousel2/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -41,9 +42,8 @@
         </ul>
     </nav>
 </header>
-<div class="container-fluid banner">
-<div class="row">
-    <div class="col-md-12 text-center">
+<div class="banner">
+    <div class="text-center">
         <div class="description">
             <p>
             Оптовая и мелкоптовая продажа <br> металлопроката, ППУ изоляции и <br> сопутствующих строительных материалов
@@ -51,7 +51,6 @@
         </div>
         <img src="img/banner.png" alt="banner">
     </div>
-</div>
 </div>
     <div class="right about">
         <h1><img class="line" src="img/line.png" alt="">О компании "СТАРГРУПП"</h1>
@@ -79,15 +78,19 @@
     </div>
 <div class="form">
     <div class="form_center">
-    <h1><img class="line" src="img/line.png" alt="">Остались вопросы или хотите сделать заявку? </h1>
+    <h1 class="form__title"><img class="line" src="img/line.png" alt="">Остались вопросы или хотите сделать заявку? </h1>
     <form action="#" method="post">
         <div class="d-flex u-info">
-            <input class="form_name" type="text" name="name" placeholder="Ваше имя">
-            <input type="text" name="phone" placeholder="Ваш телефон">
+            <div class="form__input">
+                <input class="form_name" type="text" name="name" placeholder="Ваше имя">
+                <i class="form__input-icon" style="background-image: url(img/form-1.png);"></i>
+            </div>
+            <div class="form__input">
+                <input type="text" name="phone" placeholder="Ваш телефон">
+                <i class="form__input-icon" style="background-image: url(img/form-2.png);"></i>
+            </div>
         </div>
-        <textarea name="comment" placeholder="Ваше сообщение">
-
-        </textarea>
+        <textarea name="comment" placeholder="Ваше сообщение"></textarea>
         <button class="btn form_btn">Отправить заявку</button>
         <div class="conf_text">Нажимая кнопку “Отправить заявку”, я <a href="#">даю свое согласие</a> на обработку персональных данных</div>
     </form>
@@ -125,21 +128,29 @@
 <div class="news">
     <h1><img class="line" src="img/line.png" alt="">Наши новости</h1>
     <div class="news_box">
-        <div class="item">
-            <div class="data">08.02.2018</div>
-            <div class="name">Запуск собственного производства ППУ</div>
-            <hr>
-            <div class="body">Полфые скорлупы из пенополиуретана. Поперечное сечение изоляции имеет разрез поперек диаметра, доходящий до покровного материала, для удобства раскрытия и... </div>
-            <a href="#" class="btn b_o">Подробнее <i class="fa fa-angle-right"></i></a>
+        <div class="news_box-slider owl-carousel">
+            <div class="item">
+                <div class="data">08.02.2018</div>
+                <div class="name">Запуск собственного производства ППУ</div>
+                <hr>
+                <div class="body">Полфые скорлупы из пенополиуретана. Поперечное сечение изоляции имеет разрез поперек диаметра, доходящий до покровного материала, для удобства раскрытия и... </div>
+                <a href="#" class="btn b_o">Подробнее <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="item">
+                <div class="data">08.02.2018</div>
+                <div class="name">Запуск собственного производства ППУ</div>
+                <hr>
+                <div class="body">Полфые скорлупы из пенополиуретана. Поперечное сечение изоляции имеет разрез поперек диаметра, доходящий до покровного материала, для удобства раскрытия и... </div>
+                <a href="#" class="btn b_o">Подробнее <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="item">
+                <div class="data">08.02.2018</div>
+                <div class="name">WTF</div>
+                <hr>
+                <div class="body">Полфые скорлупы из пенополиуретана. Поперечное сечение изоляции имеет разрез поперек диаметра, доходящий до покровного материала, для удобства раскрытия и... </div>
+                <a href="#" class="btn b_o">Подробнее <i class="fa fa-angle-right"></i></a>
+            </div>
         </div>
-        <div class="item">
-            <div class="data">08.02.2018</div>
-            <div class="name">Запуск собственного производства ППУ</div>
-            <hr>
-            <div class="body">Полфые скорлупы из пенополиуретана. Поперечное сечение изоляции имеет разрез поперек диаметра, доходящий до покровного материала, для удобства раскрытия и... </div>
-            <a href="#" class="btn b_o">Подробнее <i class="fa fa-angle-right"></i></a>
-        </div>
-
     </div>
 
 </div>
@@ -189,6 +200,7 @@
     </form>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/OwlCarousel2/dist/owl.carousel.min.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/wow.js"></script>
 <script>
@@ -199,7 +211,14 @@
         $('div.close').on('click', function () {
             $('div.modal').hide();
         });
-    })
+    
+        $('.news_box-slider').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            items:2
+        });
+    });
 </script>
 </body>
 </html>

@@ -103,10 +103,41 @@ div.phone{
     margin-right: auto;
     list-style:none;
     justify-content:space-between;
+    padding-left: 0;
+}
+.main_menu li {
+	display: block;
+	text-align: center;
+	position: relative;
+}
+.main_menu li::before {
+	content: "";
+	width: 1px;
+	height: 12px;
+	background-color: #5b6499;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -6px;
+	z-index: 1;
+}
+.main_menu li:last-child::after {
+	content: "";
+	width: 1px;
+	height: 12px;
+	background-color: #5b6499;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -6px;
+	z-index: 1;
 }
 .main_menu a{
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 0 30px;
 
 }
 .main_menu li {
@@ -369,7 +400,7 @@ p.title{
 /*inner*/
 .inner{
     width: 1000px;
-    margin-left: 450px;
+    margin: 0 auto;
 }
 .bread{
     background: #f8f8f8;
@@ -380,6 +411,7 @@ p.title{
 .bread ul{
     display: flex;
     list-style: none;
+    padding-left: 0;
 }
 .bread li{
     margin-right: 5px;
